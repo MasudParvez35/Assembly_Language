@@ -47,7 +47,7 @@
     jmp exit
     
     exit:
-    mov ah,4ch  ; last 4 line use for exit
+    mov ah,4ch 
     int 21h
     main endp
 end main     
