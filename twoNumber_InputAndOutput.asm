@@ -1,6 +1,6 @@
 .model small  ; code segment and data segment 
 .stack 100h
-.data
+.data   
     m db 3  
     s db 'Masud Parvez $'  
     
