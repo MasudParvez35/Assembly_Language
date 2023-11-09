@@ -1,17 +1,16 @@
- include 'emu8086.inc'
+include 'emu8086.inc'
 org 100h
 
 CALL SCAN_NUM  
-MOV BL,CL     
-MOV AX , 0001H
+mov bl,cl     
+mov ax, 0001H
 
 FACT:
-    MUL BL 
-    DEC BL  
-    DEC CL
-    CMP CL,0
-    JNE FACT
-    ;LOOP FACT
+    mul bl 
+    dec bl  
+    dec cl
+    cmp cl,0
+    jne FACT   ; jne not equel
 CALL PRINT_NUM
 
 ret
